@@ -5,6 +5,7 @@ import Card from "./Card";
 const Countries = () => {
   const [data, setData] = useState([]);
   const [rangeValue, setRangeValue] = useState(36);
+  const [selectedRadios,setSelectedRadios] = useState ("")
   const radios = ["Africa", "America", "Asia", "Europe", "Oceania"];
 
   useEffect(() => {
@@ -25,12 +26,14 @@ const Countries = () => {
         />
         {radios.map((continent) => (
           <li key={continent.id}>
-            <input type="radio" id={continent} name="continentRadio" />
+            <input type="radio" id={continent} name="continentRadio"onChange={(e) => setSelectedRadios(e.target.id)}/>
             <label htmlFor={continent}>{continent}</label>
           </li>
         ))}
       </ul>
-      {data.slice(0, rangeValue).map((country, index) => (
+      {data.filter((country) => country.continents[0].includes(selectedRadios))
+      .slice(0, rangeValue)
+      .map((country, index) => (
         <Card key={index} country={country} />
       ))}
     </div>

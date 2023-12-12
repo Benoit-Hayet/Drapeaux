@@ -5,6 +5,9 @@
   text-align: center;
 }
 
+img.logo {
+  justify-content: center;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

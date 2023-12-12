@@ -1,8 +1,19 @@
-# React + Vite
+Bienvenu sur le projet drapeaux !
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Celui-ci a été réalisé dans le cadre de mes cours et le suivi de vidéos de tuto du développeur FromScratch.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Le but de l'exercice est l'utilisation de l'API Rest Countries afin de récolter les données disponibles et les mettre en forme.
+
+
+Durant ce travail, j'y ai vu les notions de :
+
+
+- Le Router et la Navigation
+- La méthode Axios (useEffect, useState)
+- L'utilisation de Map et Props
+- La mise en place de filtres
+
+
+Pour visualiser le projet, n'oubliez pas d'installer les dépendances avec npm install.

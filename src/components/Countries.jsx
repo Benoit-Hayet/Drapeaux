@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Countries = () => {
   const [data, setData] = useState([]);
-  const [rangeValue, setRangeValue] = useState(36);
+  const [rangeValue, setRangeValue] = useState(5);
   const [selectedRadios,setSelectedRadios] = useState ("")
   const radios = ["Africa", "America", "Asia", "Europe", "Oceania"];
 
